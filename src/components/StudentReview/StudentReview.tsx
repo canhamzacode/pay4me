@@ -38,14 +38,16 @@ const reviews = [
 const StudentReview = () => {
   return (
     <div className='w-full max-w-[1189px] mx-auto  md:px-0 px-5 mt-16 py-14'>
-        <div className='w-[701px] mx-auto relative'>
-            <button className='w-[45px] h-[49px] bg-[#7AC52D26] absolute -left-14 rounded-md flex items-center justify-center'>
-                <Image src="/images/globeIcon.png" width={25} height={25} alt='globe icon' />
-            </button>
-            <h3 className='text-5xl font-bold'>Trusted by thousands of students and immigrants around the world</h3>
-            <button className='w-[45px] h-[49px] bg-[#F56C2C26] absolute -right-14 bottom-0 rounded-md flex items-center justify-center'>
-                <Image src="/images/flash.png" width={25} height={25} alt='flash icon' />
-            </button>
+        <div className='flex items-center justify-center'>
+            <div className='flex tablet:gap-5 gap-3'>
+                <button className='tablet:w-[45px] w-[30px] tablet:h-[49px] h-[30px] bg-[#7AC52D26] rounded-md flex items-center justify-center p-1'>
+                    <Image src="/images/globeIcon.png" width={25} height={25} alt='globe icon' />
+                </button>
+                <h3 className='tablet:text-5xl text-2xl text-center tablet:w-[701px] w-full font-bold'>Trusted by thousands of students and immigrants around the world</h3>
+                <button className='tablet:w-[45px] w-[30px] tablet:h-[49px] h-[30px] bg-[#F56C2C26] rounded-md flex items-center justify-center p-1'>
+                    <Image src="/images/flash.png" width={25} height={25} alt='flash icon' />
+                </button>
+            </div>
         </div>
         <div className="mt-16 w-full flex items-center justify-center gap-x-20 gap-y-10 flex-wrap">
         {reviews.map((review, index) => (
@@ -59,7 +61,7 @@ const StudentReview = () => {
                 />
                 {/* Insert CTA after the second review */}
                 {index === 0 && (
-                    <div className="w-auto flex flex-col items-center justify-around gap-4 py-8 bg-light-gray rounded-lg">
+                    <div className="w-auto tablet:flex hidden flex-col items-center justify-around gap-4 py-8 bg-light-gray rounded-lg">
                         <div className="items-center w-[326px] flex flex-col gap-6 relative">
                             <AppStoreButton 
                                 icon="/images/playstoreIcon.svg" 
@@ -79,6 +81,23 @@ const StudentReview = () => {
                 )}
             </Fragment>
         ))}
+         <div className="w-auto tablet:hidden flex flex-col items-center justify-around gap-4 py-8 bg-light-gray rounded-lg">
+            <div className="items-center w-[326px] flex flex-col gap-6 relative">
+                <AppStoreButton 
+                    icon="/images/playstoreIcon.svg" 
+                    platform="Play Store" 
+                    description="More Reviews" 
+                />
+                <AppStoreButton 
+                    icon="/images/appleIcon.svg" 
+                    platform="App Store" 
+                    description="More Reviews" 
+                />
+                <div className="absolute -top-8 -right-8 w-[438px] h-[340px]">
+                    <Image src="/images/bgGradient.png" width={338} height={340} alt="bg gradient" className='w-full h-full' />
+                </div>
+            </div>
+        </div>
     </div>
     </div>
   )

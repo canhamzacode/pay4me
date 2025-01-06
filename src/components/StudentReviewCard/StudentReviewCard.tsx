@@ -44,8 +44,8 @@ const StudentReviewCard= ({
         />
       </div>
 
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[271px] bg-[#F9FAFF] h-[96px] review_shadow py-3 flex flex-col gap-2 items-center rounded-lg">
-        <p className="text-2xl font-bold">{name}</p>
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[271px] bg-[#F9FAFF] h-auto review_shadow py-3 flex flex-col gap-2 items-center rounded-lg">
+        <p className="tablet:text-2xl text-base font-bold">{name}</p>
         <div className="flex items-center gap-1">
           {Array.from({ length: stars }).map((_, index) => (
             <Image
@@ -54,6 +54,7 @@ const StudentReviewCard= ({
               width={35}
               height={35}
               alt="star"
+              className="w-6 h-6"
             />
           ))}
         </div>
