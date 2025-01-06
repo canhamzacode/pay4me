@@ -1,11 +1,13 @@
-import { Hero, Navbar } from "@/components";
+import { Hero, Navbar, StudentReview, TrustedBy } from "@/components";
 
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <Hero /> 
+      <Hero />
+      <TrustedBy />
+      <StudentReview />
     </div>
   );
 }
