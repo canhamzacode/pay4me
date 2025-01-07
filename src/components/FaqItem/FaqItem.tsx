@@ -1,13 +1,8 @@
+import { FaqItemProps } from '@/types';
 import React from 'react'
 import { FiMinusCircle } from 'react-icons/fi';
 import { GoPlusCircle,  } from 'react-icons/go'
 
-interface FaqItemProps {
-    question: string;
-    answer: string;
-    isOpen: boolean;
-    onToggle: () => void;
-}
 
 
 const FaqItem: React.FC<FaqItemProps> = ({ question, answer, isOpen, onToggle }) => (

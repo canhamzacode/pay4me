@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { SectionTitle } from '../SectionTitle';
 import { FaqItem } from '../FaqItem';
+import { IFaq } from '@/types';
 
-interface Faq {
-  question: string;
-  answer: string;
-}
+
 
 const Faqs = () => {
-  const faqs: Faq[] = [
+  const faqs: IFaq[] = [
     {
       question: 'What is the Pay4Me App?',
       answer:

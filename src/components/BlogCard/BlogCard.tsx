@@ -14,7 +14,7 @@ const BlogCard = ({ post }: BlogCardProps) => {
 
   return (
     <div className='w-full max-w-[380px] bg-white mx-auto'>
-        <Link href={`/posts/${slug}`} aria-label={title}>
+        <Link href={`/blogs/${slug}`} aria-label={title}>
             <div className='overflow-hidden'>
                 <ContentfulImage
                     alt={`Cover Image for ${title}`}

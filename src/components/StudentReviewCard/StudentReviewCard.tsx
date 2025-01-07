@@ -1,14 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { StudentReviewCardProps } from "@/types";
 
-interface StudentReviewCardProps {
-  overlayImage: string;
-  name: string;
-  stars: number;
-  bgSize?: number;
-  overlaySize?: number;
-  bgImage?: string;
-}
 
 const StudentReviewCard= ({
   overlayImage,

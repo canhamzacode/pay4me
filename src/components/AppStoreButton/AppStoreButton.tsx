@@ -1,10 +1,6 @@
+import { AppStoreButtonProps } from "@/types";
 import Image from "next/image";
 
-interface AppStoreButtonProps {
-    icon: string; 
-    platform: string; 
-    description: string; 
-}
 
 const AppStoreButton = ({ icon, platform, description }: AppStoreButtonProps) => (
     <button className="px-6 py-3 rounded-md font-bold h-[70px] w-full border border-[#A6A6A6] flex items-center tablet:justify-between justify-center gap-3 z-20">

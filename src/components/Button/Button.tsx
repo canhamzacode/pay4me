@@ -1,16 +1,6 @@
+import { ButtonProps } from "@/types";
 import React from "react";
 
-interface ButtonProps {
-  text: string;
-  width?: string;
-  height?: string;
-  bgColor?: string;
-  textColor?: string;
-  overlay?: boolean;
-  overlayColor?: string;
-  overlayOffset?: { top: string; left: string };
-  onClick?: () => void;
-}
 
 const Button: React.FC<ButtonProps> = ({
   text,

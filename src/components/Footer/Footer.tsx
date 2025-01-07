@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
@@ -33,18 +34,22 @@ const socialMedia = [
 ];
 
 const Footer = () => {
+  const router = useRouter();
+
   return (
     <div className="w-full pt-14">
         <div className="w-full max-w-[1142px] mx-auto">
             {/* Disclaimer */}
-            <div className="w-full py-10 px-5 border-b border-b-[#1118270D]">
-            <p className="text-center text-[#111827]">
-                Pay4Me facilitates quick and easy tuition and fee payments for
-                international students and immigrants through partnerships with
-                licensed financial institutions. All mentioned brands are trademarks
-                of their respective owners and do not imply endorsement.
-            </p>
-            </div>
+            {router.pathname === "/" && (
+              <div className="w-full py-10 px-5 border-b border-b-[#1118270D]">
+                <p className="text-center text-[#111827]">
+                  Pay4Me facilitates quick and easy tuition and fee payments for
+                  international students and immigrants through partnerships with
+                  licensed financial institutions. All mentioned brands are trademarks
+                  of their respective owners and do not imply endorsement.
+                </p>
+              </div>
+            )}
 
             {/* Footer Content */}
             <div className="flex gap-x-20 gap-y-10 py-10 sm:justify-between flex-wrap px-5 items-center">

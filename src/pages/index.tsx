@@ -1,4 +1,4 @@
-import { DownloadBanner, DownloadGuide, Faqs, Footer, Hero, LatestBlogs, Navbar, OurWhy, StudentReview, TrustedBy } from "@/components";
+import { DownloadBanner, DownloadGuide, Faqs, Hero, LatestBlogs, OurWhy, StudentReview, TrustedBy } from "@/components";
 import { client } from "@/lib/contentful";
 import { IBlog } from "@/types";
 
@@ -7,9 +7,9 @@ interface BlogPost {
 }
 
 export default function Home({ posts }: BlogPost) {
+  console.log("authors", posts[0].fields.author)
   return (
     <div>
-      <Navbar />
       <Hero />
       <TrustedBy />
       <StudentReview />
@@ -18,7 +18,6 @@ export default function Home({ posts }: BlogPost) {
       <LatestBlogs posts={posts} />
       <Faqs />
       <DownloadBanner />
-      <Footer />
     </div>
   );
 }

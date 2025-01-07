@@ -14,3 +14,8 @@ export * from "./Faqs";
 export * from "./DownloadBanner";
 export * from "./Footer";
 export * from "./ContentfulImage";
+export * from "./RichText";
+export * from "./Skeleton";
+export * from "./PostBody";
+export * from "./PostHeader";
+export * from "./Avatar";

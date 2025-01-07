@@ -1,3 +1,4 @@
+import { Footer, Navbar } from "@/components";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import localFont from 'next/font/local';
@@ -17,7 +18,9 @@ const cabinet = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${cabinet.variable} font-cabinet text-text-color`}>
+      <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </main>
   );
 }
