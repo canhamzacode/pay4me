@@ -49,7 +49,7 @@ const StudentReview = () => {
                 </button>
             </div>
         </div>
-        <div className="mt-16 w-full flex items-center justify-center gap-x-20 gap-y-10 flex-wrap">
+        <div className="mt-16 w-full flex items-center justify-center gap-x-20 tablet:gap-y-10 gap-y-5 flex-wrap">
         {reviews.map((review, index) => (
             <Fragment key={index}>
                 <StudentReviewCard

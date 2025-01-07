@@ -5,7 +5,6 @@ import { Button } from '../Button'
 const Hero = () => {
   return (
     <div className="w-full max-w-[1104px] mx-auto md:px-0 px-5 mt-16 relative">
-      {/* Global Community Section */}
       <div className="w-full max-w-[408px] h-12 border-primary border gap-4 items-center justify-center flex bg-[#AFE27429] rounded-2xl mx-auto">
         <Image
           src="/images/users-pics.png"
@@ -17,10 +16,7 @@ const Hero = () => {
           Joined by a global community of students
         </p>
       </div>
-
-      {/* Hero Content */}
       <div className="w-full pt-16 flex flex-col gap-6 text-center items-center justify-center relative z-10">
-        {/* Title */}
         <div className="max-w-[742px]">
           <h1 className="tablet:text-5xl text-2xl font-bold text-[#111827] md:leading-[59px] z-20">
             Cross-border{' '}
@@ -29,7 +25,6 @@ const Hero = () => {
           </h1>
         </div>
 
-        {/* Subtitle */}
         <div className="tablet:text-2xl text-base text-[#111827B2] max-w-[542px]">
           <p>
             The easiest and fastest way to pay tuition and fees to educational
@@ -37,11 +32,9 @@ const Hero = () => {
           </p>
         </div>
 
-        {/* Button */}
         <Button text="Read More" onClick={() => console.log('Clicked!')} />
       </div>
 
-      {/* Left Illustration */}
       <div className="absolute left-0 top-0 z-0">
         <Image
           src="/images/leftIllustration.png"
@@ -52,7 +45,6 @@ const Hero = () => {
         />
       </div>
 
-      {/* Right Illustration */}
       <div className="absolute right-0 top-0 z-0">
         <Image
           src="/images/rightillustration.png"
@@ -63,7 +55,6 @@ const Hero = () => {
         />
       </div>
 
-      {/* Hero Image */}
       <div className="w-full flex flex-col mt-20 gap-24 relative z-10">
         <div className="w-full flex items-center justify-center px-6">
           <Image

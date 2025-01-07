@@ -1,4 +1,4 @@
-import { Hero, Navbar, StudentReview, TrustedBy } from "@/components";
+import { Hero, Navbar, OurWhy, StudentReview, TrustedBy } from "@/components";
 
 
 export default function Home() {
@@ -8,6 +8,7 @@ export default function Home() {
       <Hero />
       <TrustedBy />
       <StudentReview />
+      <OurWhy />
     </div>
   );
 }

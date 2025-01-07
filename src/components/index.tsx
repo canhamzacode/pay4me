@@ -5,3 +5,4 @@ export * from "./TrustedBy";
 export * from "./StudentReview";
 export * from "./StudentReviewCard";
 export * from "./AppStoreButton";
+export * from "./OurWhy";
