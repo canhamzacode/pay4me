@@ -13,3 +13,4 @@ export * from "./SectionTitle";
 export * from "./Faqs";
 export * from "./DownloadBanner";
 export * from "./Footer";
+export * from "./ContentfulImage";
