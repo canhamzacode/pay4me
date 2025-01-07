@@ -7,15 +7,15 @@ const LatestBlogs = () => {
   return (
     <div className="w-full bg-[#f9faff] py-16">
         <div className="w-full max-w-[1194px] mx-auto md:px-0 px-5 mt-16">
-            <SectionTitle text='Latest Blogs and Resources' />
-            <div className='grid grid-cols-3 gap-8 mt-14'>
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-            </div>
-            <div className='mt-6 flex items-center justify-center'>
-                <Button text='View More' />
-            </div>
+          <SectionTitle text='Latest Blogs and Resources' />
+          <div className='grid grid-cols-3 gap-8 mt-14'>
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+          </div>
+          <div className='mt-6 flex items-center justify-center'>
+              <Button text='View More' />
+          </div>
         </div>
     </div>
   )

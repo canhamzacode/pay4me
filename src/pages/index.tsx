@@ -1,4 +1,4 @@
-import { DownloadGuide, Hero, LatestBlogs, Navbar, OurWhy, StudentReview, TrustedBy } from "@/components";
+import { DownloadGuide, Faqs, Hero, LatestBlogs, Navbar, OurWhy, StudentReview, TrustedBy } from "@/components";
 
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
       <OurWhy />
       <DownloadGuide />
       <LatestBlogs />
+      <Faqs />
     </div>
   );
 }

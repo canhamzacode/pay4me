@@ -10,3 +10,4 @@ export * from "./DownloadGuide";
 export * from "./LatestBlogs";
 export * from "./BlogCard";
 export * from "./SectionTitle";
+export * from "./Faqs";
