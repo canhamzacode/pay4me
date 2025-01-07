@@ -1,5 +1,4 @@
 .grid-container {
-    height: 831px;
     display: grid;
     grid-template-columns: 1fr 1fr;  /* 2 equal-width columns */
     grid-template-areas: 
@@ -8,8 +7,7 @@
       "item1 item4"
       "item3 item4"
       "item3 item4";
-    gap: 16px; /* Space between items */ 
-    /* grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr; */
+    gap: 16px;
     grid-auto-rows: min-content; 
 }
   

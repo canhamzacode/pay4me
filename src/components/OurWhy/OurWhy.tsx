@@ -1,25 +1,18 @@
 import Image from 'next/image';
 import React from 'react';
 import './ourWhy.css';
+import { SectionTitle } from '../SectionTitle';
 
 const OurWhy = () => {
   return (
     <div className="w-full bg-[#f9faff] py-10">
       <div className="w-full max-w-[1194px] mx-auto md:px-0 px-5 mt-16">
-        <div className="flex items-center justify-center gap-4">
-          <div className="tablet:w-[35px] w-[25px] tablet:h-[36px] h-[26px]">
-            <Image src="/images/leftLeaf.png" width={35} height={36} alt="logo" />
-          </div>
-          <h3 className="tablet:text-5xl text-2xl font-bold text-[#111827]">Why We Built the Pay4me App</h3>
-          <div className="tablet:w-[35px] w-[25px] tablet:h-[36px] h-[26px]">
-            <Image src="/images/rightLeaf.png" width={35} height={36} alt="logo" />
-          </div>
-        </div>
+        <SectionTitle text='Why We Built the Pay4me App' />
 
         <div className="mt-20 grid tablet:grid-cols-[0.6fr,1fr] grid-cols-1 gap-4 px-6">
           {/* First Section: Global Education Payments */}
-          <div className="bg-[#ECE8521A] max-w-[400px] mx-auto rounded-t-[40px] border border-[#00000033] pt-11 px-10 flex flex-col gap-10">
-            <div className="flex flex-col gap-3">
+          <div className="bg-[#ECE8521A] max-w-[400px] mx-auto rounded-t-[40px] border border-[#00000033] pt-11 px-10 flex flex-col gap-10 justify-between">
+            <div className="flex flex-col gap-5">
               <h3 className="text-2xl font-bold max-w-[302px]">To Facilitate Global Education Payments</h3>
               <p className="text-[#111827CC] max-w-[413px]">
                 Pay4Me empowers international students to easily fund their educational pursuits by offering a diverse range of payment options, including visa fees, tuition, and other essential educational expenses.

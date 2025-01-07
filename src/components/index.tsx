@@ -6,3 +6,7 @@ export * from "./StudentReview";
 export * from "./StudentReviewCard";
 export * from "./AppStoreButton";
 export * from "./OurWhy";
+export * from "./DownloadGuide";
+export * from "./LatestBlogs";
+export * from "./BlogCard";
+export * from "./SectionTitle";
