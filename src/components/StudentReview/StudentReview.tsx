@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React, { Fragment } from 'react'
-import "./review.css"
 import { StudentReviewCard } from '../StudentReviewCard'
 import { AppStoreButton } from '../AppStoreButton'
 

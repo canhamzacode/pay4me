@@ -16,3 +16,43 @@ body {
   background: var(--background);
   font-family: var(--font-cabinet);
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* 2 equal-width columns */
+  grid-template-areas: 
+    "item1 item2"
+    "item1 item2"
+    "item1 item4"
+    "item3 item4"
+    "item3 item4";
+  gap: 16px;
+  grid-auto-rows: min-content; 
+}
+
+/* .grid-item {
+  padding: 20px;
+  background-color: lightgray;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+.grid-item{
+  overflow: hidden;
+}
+
+@media (max-width: 750px) {
+  .grid-container {
+      grid-template-columns: 1fr;  /* Stack grid items in a single column */
+      grid-template-areas: 
+          "item1"
+          "item2"
+          "item3"
+          "item4"; /* Adjusted grid layout for mobile view */
+  }
+}
+
+.review_shadow {
+  box-shadow: 0px 4px 4px 0px #00000045;
+}

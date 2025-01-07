@@ -7,7 +7,6 @@ interface BlogPost {
 }
 
 export default function Home({ posts }: BlogPost) {
-  console.log("authors", posts[0].fields.author)
   return (
     <div>
       <Hero />
