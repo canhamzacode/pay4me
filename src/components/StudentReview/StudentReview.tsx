@@ -62,7 +62,7 @@ const StudentReview = () => {
                 {/* Insert CTA after the second review */}
                 {index === 0 && (
                     <div className="w-auto tablet:flex hidden flex-col items-center justify-around gap-4 py-8 bg-light-gray rounded-lg">
-                        <div className="items-center w-[326px] flex flex-col gap-6 relative">
+                        <div className="items-center max-w-[326px] w-full px-3 flex flex-col gap-6 relative">
                             <AppStoreButton 
                                 icon="/images/playstoreIcon.svg" 
                                 platform="Play Store" 

@@ -8,7 +8,7 @@ const LatestBlogs = () => {
     <div className="w-full bg-[#f9faff] py-16">
         <div className="w-full max-w-[1194px] mx-auto md:px-0 px-5 mt-16">
           <SectionTitle text='Latest Blogs and Resources' />
-          <div className='grid grid-cols-3 gap-8 mt-14'>
+          <div className='grid tablet:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-14 px-5'>
               <BlogCard />
               <BlogCard />
               <BlogCard />

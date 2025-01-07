@@ -49,7 +49,7 @@ const Faqs = () => {
           ))}
         </div>
         <div className='mt-6 text-center'>
-            <p className='text-2xl font-medium'>Have more questions? <span className='underline text-primary'>See the full FAQ</span></p>
+            <p className='tablet:text-2xl text-base font-medium'>Have more questions? <span className='underline text-primary'>See the full FAQ</span></p>
         </div>
       </div>
     </div>

@@ -20,7 +20,7 @@ const DownloadGuide = () => {
                 </div>
             </div>
         </div>
-        <div className='w-full grid px-20 mt-14 tablet:grid-cols-[1fr,0.6fr] grid-cols-1 relative '>
+        <div className='w-full grid tablet:px-20 px-10 mt-14 tablet:grid-cols-[1fr,0.6fr] grid-cols-1 relative '>
             <div className='w-full max-w-[751px] mx-auto flex flex-col gap-10 mt-7'>
                 <div>
                     <h4 className='tablet:text-3xl text-xl font-bold'>Here&apos;s a step-by-step guide to downloading the Pay4Me app and getting started:</h4>
